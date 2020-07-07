@@ -8,6 +8,10 @@
     "dev": "harp server _src & browser-sync start --no-open --proxy 'localhost:9000' --files '**/*.jade, **/*.scss, **/*.json, **/*.js, **/*.md' --no-notify",
     "build": "harp compile _src docs"
   },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "harp": "^0.32.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/theater-theme/theater-theme.git"
