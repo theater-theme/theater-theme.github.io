@@ -1,0 +1,49 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #4a0000;
+    font-family: Oswald-Regular;
+  }
+
+  &__wrap,
+  &__wrap--last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-bottom: 2px solid goldenrod;
+  }
+
+  &__wrap--last {
+    border: none;
+  }
+
+  &__image,
+  &__content {
+    padding: 25px;
+  }
+    
+  &__content {
+    width: 70%;
+  }
+
+  &__title {
+    font-family: Oswald-Regular;
+  }
+
+  &__title,
+  &__text{
+    color: #4a0000;
+  }
+
+  &__text{
+    font-size: 14px;
+  }
+}
