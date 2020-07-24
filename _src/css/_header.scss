@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url('../assets/cover.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__nav {
+    height: 50px;
+    display: flex;
+  }
+
+
+  &__list {
+    display: flex;
+    width: 350px;
+    padding: 0;
+  }
+
+  &__items {
+    list-style-type: none;
+    margin-right: 25px;    
+  }
+
+  &__links {
+    text-decoration: none;
+    color: goldenrod;
+    transition: all .25s linear;
+  }
+
+  &__links:hover {
+    color: white;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    line-height: 5px;
+  }
+
+  &__title--big {
+    font-size: 48px
+  }
+
+  &__title--small {
+    font-size: 18px;
+  }
+
+
+}
