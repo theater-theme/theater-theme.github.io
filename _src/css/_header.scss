@@ -1,36 +1,37 @@
 .header {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url('../assets/cover.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__nav {
+    height: 50px;
     display: flex;
-    height: 100vh;
-    flex-direction: column;
-    background-image: url('../assets/chairs.jpg');
-    background-repeat: no-repeat;
-
-    &__nav {
-      height: 50px;
-      display: flex;
-    }
+  }
 
 
-    &__list {
-      display: flex;
-      width: 350px;
-      padding: 0;
-    }
+  &__list {
+    display: flex;
+    width: 350px;
+    padding: 0;
+  }
 
-    &__items {
-      list-style-type: none;
-      margin-right: 25px;    
-    }
+  &__items {
+    list-style-type: none;
+    margin-right: 25px;    
+  }
 
-    &__links {
-      text-decoration: none;
-      color: goldenrod;
-      transition: all .25s linear;
-    }
+  &__links {
+    text-decoration: none;
+    color: goldenrod;
+    transition: all .25s linear;
+  }
 
-    &__links:hover {
-      color: white;
-    }
+  &__links:hover {
+    color: white;
+  }
 
   &__title {
     display: flex;
