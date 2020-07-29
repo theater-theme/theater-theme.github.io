@@ -4,13 +4,13 @@
   display: flex;
   flex-wrap: wrap;
 
-  &__content,
+  &__card,
   &__image {
     height: calc(100% / 2);
     width: calc(100% / 3);
   }
 
-  &__content {
+  &__card {
     display: flex;
     flex-direction: column;
     background-color: #581b1b;
