@@ -1,0 +1,8 @@
+h1.team__title Meet the Specialists
+
+.team__wrap 
+  each team, slug in public.team._data
+    .team__member
+      img.team__image 
+      h3.team__name #{ team.name }
+      span.team__role #{ team.role }

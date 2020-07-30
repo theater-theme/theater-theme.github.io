@@ -1,0 +1,42 @@
+{
+  "julia": {
+    "image": "../assets/juliacarter.png",
+    "name": "Julia Carter",
+    "role": "CEO"
+  },
+  "monica": {
+    "image": "../assets/monicaiverson.png",
+    "name": "Monica Iverson",
+    "role": "Designer"
+  },
+  "johnny": {
+    "image": "../assets/johnnygreen.png",
+    "name": "Johnny Green",
+    "role": "Developer"
+  },
+  "karen": {
+    "image": "../assets/karendavis.png",
+    "name": "Karen Davis",
+    "role": "Project Manager"
+  },
+  "leslie": {
+    "image": "../assets/lesliesmith.png",
+    "name": "Leslie Smith",
+    "role": "Photographer"
+  },
+  "peter": {
+    "image": "../assets/petescott.png",
+    "name": "Peter Scott",
+    "role": "Developer"
+  },
+  "thomas": {
+    "image": "../assets/thomasadams.png",
+    "name": "Thomas Adams",
+    "role": "Project Manager"
+  },
+  "julian": {
+    "image": "../assets/julianstuart.png",
+    "name": "Julian Stuart",
+    "role": "Designer"
+  }
+}
