@@ -8,6 +8,11 @@
   &__image {
     height: calc(100% / 2);
     width: calc(100% / 3);
+
+    @media screen and (max-width: $web-up) {
+      width: calc(100% / 2);
+      height: calc(100%/ 3);
+    }
   }
 
   &__card {
@@ -15,6 +20,14 @@
     flex-direction: column;
     background-color: #581b1b;
     padding: 25px;
+
+    @media screen and (max-width: $tablet-up) {
+      padding: 20px;
+    }
+
+    @media screen and (max-width: $mobile-up) {
+      padding: 15px;
+    }
   }
 
   &__title,
@@ -22,10 +35,29 @@
     color: white;
   }
 
+  &__title {
+
+    @media screen and (max-width: $mobile-up) {
+      margin: 0;
+    }
+  }
+
   &__text {
     width: 70%;
-    font-size: 13px;  
+    font-size: 14px;  
     line-height: 24px;
+
+    @media screen and (max-width: $tablet-up) {
+      width: 85%;
+
+      line-height: 20px;
+     }
+
+    @media screen and (max-width: $mobile-up) {
+     width: 95%;
+     font-size: 13px;
+     line-height: 18px;
+    }
   }
 
   &__image {

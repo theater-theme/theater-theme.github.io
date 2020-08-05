@@ -7,6 +7,11 @@
   height: 100vh;
   width: 100%;
 
+  @media screen and (max-width: $web-up){
+    height: unset;
+    padding-bottom: 25px;
+  }
+
   &__title {
     color: #4a0000;
     font-weight: bolder;
@@ -19,6 +24,10 @@
     align-items: center;   
     width: 75%;
     margin-top: 25px;
+    
+    @media screen and (max-width: $web-up){
+      width: 85%;
+    }
   }
 
   &__member {
@@ -30,7 +39,13 @@
     width: calc(100% / 4);
     margin-bottom: 15px;
     padding: 15px;
-    height: 250px;
+
+    @media screen and (max-width: $mobile-up){
+      margin-bottom: unset;
+      padding-bottom: unset;
+      width: calc(100% / 3);
+      padding: 0 0 25px;
+    }
   }
 
   &__image {
@@ -39,23 +54,34 @@
     border-radius: 50%;
     border: 5px solid goldenrod;
     object-fit: cover;
-  }
 
-  &__image--center {
-    object-position: left;
-  }
+    @media screen and (max-width: $tablet-up) {
+      width: 85px;
+      height: 85px;      
+    }
 
-  &__image--top {
-    object-position: top;
-  }
+    @media screen and (max-width: $mobile-up) {
+      width: 60px;
+      height: 60px;      
+    }
+  } 
 
   &__name {
     color: #581b1b;
     font-weight: bolder;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: $tablet-up) {
+      font-size: 14px;
+    }
   }
 
   &__role {
     color: #581b1b;
     font-size: 14px;
+
+    @media screen and (max-width: $tablet-up) {
+      font-size: 12px;
+    }
   }
 }
