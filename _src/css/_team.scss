@@ -15,6 +15,10 @@
   &__title {
     color: #4a0000;
     font-weight: bolder;
+
+    @media screen and (min-width: $hd-up) {
+      font-size: 48px;
+    }
   }
 
   &__wrap {

@@ -17,6 +17,10 @@
     color: white;
     font-weight: bolder;
     margin: 0 0 50px;
+
+    @media screen and (min-width: $hd-up) {
+    font-size: 48px;
+    }
   }
 
   &__wrap {
@@ -27,6 +31,11 @@
     width: 70%;
     padding: 20px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: $hd-up) {
+      flex-direction: column;
+      height: 50%;
+    }
 
     @media screen and (max-width: $web-up) {
       flex-direction: column;
@@ -42,6 +51,10 @@
     justify-content: space-between;
     height: 100%;
     width: 40%;
+
+    @media screen and (min-width: $hd-up) {
+      justify-content: inherit;
+    }
     
     @media screen and (max-width: $web-up) {
       height: 20%;
@@ -72,6 +85,10 @@
     flex-direction: column;
     height: 100%;
     width: 35%;
+
+    @media screen and (min-width: $hd-up) {
+      width: 40%;
+    }
 
     @media screen and (max-width: $web-up) {
       width: 65%;

@@ -13,6 +13,10 @@
     color: #4a0000;
     font-family: Oswald-Regular;
 
+    @media screen and (min-width: $hd-up) {
+      font-size: 48px;
+    }
+
     @media screen and (max-width: $mobile-up) {
       font-size: 28px;
     }
@@ -60,6 +64,10 @@
     font-family: sans-serif;
     font-size: 16px;
 
+    @media screen and (min-width: $hd-up) {
+      font-size: 24px;
+    }
+
     @media screen and (max-width: $web-up) { 
       font-size: 14px;
     }
@@ -75,11 +83,11 @@
   }
 
   &__text{
-    font-size: 14px;
+    font-size: 12px;
 
-    @media screen and (max-width: $web-up) { 
-      font-size: 12px;
-    }
+    @media screen and (min-width: $hd-up) {
+      font-size: 16px;
+      }
 
     @media screen and (max-width: $mobile-up) {
       font-size: 10px;
