@@ -2,8 +2,7 @@
   #header.header
     .header__nav
       .header__logo
-        //- LOGO 
-        p LOGO
+        img.header__image(src="../assets/logo.png")
       ul.header__list
         li.header__items
           a.header__links(href="#") Home
@@ -32,20 +31,25 @@
     h1.contact__title Get in Touch
     .contact__wrap  
       .contact__tag
-        input.contact__placeholder(type="text", name="name", placeholder="Name")
-        input.contact__placeholder(type="text", name="email", placeholder="Email")
+        .contact__divider
+          input.contact__placeholder(type="text", name="name")
+          span.contact__label Name
+        .contact__divider
+          input.contact__placeholder(type="text", name="email")
+          span.contact__label Email
       .contact__text
-        input.contact__message(type="text", name="email", placeholder="Message")
-    button.contact__button Submit
+        input.contact__message(type="text", name="email")
+        span.contact__label Message
+    button.contact__button Send
     
     //- social media buttons
-  .container__footer 
-    a.container__button(href="https://github.com/", target="_blank")
-      svg.container__icon
+  .footer
+    a.footer__button(href="https://github.com/", target="_blank")
+      svg.footer__icon
         use(xlink:href="/assets/defs.svg#icon-github")
-    a.container__button(href="https://wordpress.org/download/", target="_blank")
-      svg.container__icon
+    a.footer__button(href="https://wordpress.org/download/", target="_blank")
+      svg.footer__icon
         use(xlink:href="/assets/defs.svg#icon-wordpress")
-    a.container__button(href="https://www.reddit.com/", target="_blank") 
-      svg.container__icon
+    a.footer__button(href="https://www.reddit.com/", target="_blank") 
+      svg.footer__icon
         use(xlink:href="/assets/defs.svg#icon-reddit")

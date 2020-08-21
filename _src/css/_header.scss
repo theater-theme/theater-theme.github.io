@@ -1,12 +1,11 @@
 .header {
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   background-image: url('../assets/cover.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
   
   p { 
     color: white;
@@ -15,19 +14,25 @@
   }
 
   &__nav {
-    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    padding: 10px 100px 0; 
+    z-index: 999;
   }
 
   &__list {
     display: flex;
     padding: 0;
+    
   }
 
   &__items {
     list-style-type: none;
     margin-right: 25px;   
+    transition: all .25s linear;
     
     @media screen and (max-width: $tablet-up) {
       margin-right: 15px;
@@ -40,7 +45,7 @@
 
   &__links {
     text-decoration: none;
-    color: goldenrod;
+    color: #E0C381;
     transition: all .25s linear;
 
     @media screen and (min-width: $hd-up) {
@@ -54,6 +59,7 @@
 
   &__links:hover {
     color: white;
+    border-bottom: 2px solid #E0C381;
   }
 
   &__title {

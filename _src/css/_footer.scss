@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #180000;
+  padding: 30px;
+
+  &__button {
+    margin-right: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+}
