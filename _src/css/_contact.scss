@@ -18,10 +18,6 @@
     font-weight: bolder;
     margin: 0 0 50px;
     font-family: Oswald;
-
-    @media screen and (min-width: $hd-up) {
-      font-size: 48px;
-    }
   }
 
   &__wrap {
@@ -32,11 +28,6 @@
     width: 70%;
     padding: 20px;
     margin-bottom: 50px;
-
-    @media screen and (min-width: $hd-up) {
-      flex-direction: column;
-      height: 50%;
-    }
 
     @media screen and (max-width: $web-up) {
       flex-direction: column;
@@ -53,17 +44,10 @@
     height: 100%;
     width: 40%;
 
-    @media screen and (min-width: $hd-up) {
-      justify-content: inherit;
-    }
-    
     @media screen and (max-width: $web-up) {
-      height: 20%;
-      width: 65%;
-    }
-
-    @media screen and (max-width: $tablet-up) {
-      width: 75%;
+      width: 80%;
+      justify-content: unset;
+      height: unset;
     }
 
     @media screen and (max-width: $mobile-up) {
@@ -71,13 +55,18 @@
     }
   }
 
+  &__divider {
+    @media screen and (max-width: $web-up) {
+      margin-bottom: 15px;
+    }
+  }
+
   &__placeholder {
     width: 100%;
     height: 50px;
 
-    @media screen and (max-width: $web-up) {
-      height: 30px;
-      margin-bottom: 15px;
+    @media screen and (max-width: $mobile-up) {
+      height: 35px;
     }
   }
   
@@ -92,17 +81,8 @@
     height: 100%;
     width: 35%;
 
-    @media screen and (min-width: $hd-up) {
-      width: 40%;
-    }
-
     @media screen and (max-width: $web-up) {
-      width: 65%;
-      margin-top: 15px;
-    }
-
-    @media screen and (max-width: $tablet-up) {
-      width: 75%;
+      width: 80%
     }
 
     @media screen and (max-width: $mobile-up) {
@@ -126,15 +106,15 @@
     margin-bottom: 50px;
     margin-top: 15px;
     border: 0 2px 3px solid #AF9559;
-    // box-shadow: 0 3px 0px 0px #AF9559;
+    cursor: pointer;
 
     @media screen and (max-width: $web-up) {
-      width: 40%;
-      height: 35px;
+      margin-bottom: unset;
     }
 
     @media screen and (max-width: $mobile-up) {
       width: 50%;
+      
     }
   }
 }

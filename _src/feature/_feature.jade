@@ -2,9 +2,12 @@ h3.feature__header Why choose Theater?
 
 each feature, slug in public.feature._data
   .feature__wrap
-    .feature__image
-      //- temporariamente não funcionando 
-      img(src="../assets/feature-#{ feature.svg }.svg")
+    svg.feature__image
+      use(xlink:href="/assets/defs.svg#icon-#{ feature.icon }")
     .feature__content
       h3.feature__title #{ feature.title }
       p.feature__text #{ feature.text }
+
+
+
+        

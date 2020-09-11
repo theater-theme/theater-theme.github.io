@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: inherit;
+  height: unset;
   margin: 50px;
-
+  
   &__header {
     font-size: 36px;
     font-weight: bolder;
@@ -42,7 +42,6 @@
     border: none;
   }
 
-  &__image,
   &__content {
     padding: 25px;
 
@@ -53,6 +52,22 @@
     @media screen and (max-width: $mobile-up) {
       padding: 10px;
     }
+  }
+
+  &__image {
+    fill: #E0C381;
+    height: 100px;
+    width: 100px;
+
+    @media screen and (max-width: $web-up) {
+      height: 150px;
+      width: 150px;
+    } 
+
+    @media screen and (max-width: $mobile-up) {
+      height: auto;
+      width: auto;
+    } 
   }
 
   &__title {
@@ -82,14 +97,14 @@
 
     @media screen and (min-width: $hd-up) {
       font-size: 16px;
-      }
+    }
 
     @media screen and (max-width: $web-up) {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     @media screen and (max-width: $mobile-up) {
-      font-size: 10px;
+      font-size: 11px;
     }
   }
 }

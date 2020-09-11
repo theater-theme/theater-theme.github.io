@@ -7,8 +7,11 @@
   margin: 50px;
 
   @media screen and (max-width: $web-up){
-    height: unset;
-    padding-bottom: 25px;
+    margin: 15px 10px;
+  }
+
+  @media screen and (max-width: $web-up){
+    padding-bottom: 15px;
   }
 
   &__title {
@@ -19,6 +22,10 @@
 
     @media screen and (min-width: $hd-up) {
       font-size: 48px;
+    }
+
+    @media screen and (max-width: $mobile-up) {
+      font-size: 28px;
     }
   }
 
@@ -45,10 +52,15 @@
     margin-bottom: 15px;
     padding: 15px;
 
-    @media screen and (max-width: $mobile-up){
+    // TABLET OR MOBILE-UP YET TO BE REVIEWED
+    @media screen and (max-width: $tablet-up) {
+      width: calc(100% / 2);
+    }
+    // TABLET OR MOBILE-UP YET TO BE REVIEWED
+    @media screen and (max-width: $mobile-up) {
       margin-bottom: unset;
       padding-bottom: unset;
-      width: calc(100% / 3);
+      width: calc(100% / 2);
       padding: 0 0 25px;
     }
   }
@@ -69,16 +81,6 @@
     object-fit: cover;
     opacity: 1;
     transition: .25s ease-in-out;
-
-    @media screen and (max-width: $tablet-up) {
-      width: 85px;
-      height: 85px;      
-    }
-
-    @media screen and (max-width: $mobile-up) {
-    width: 60px;
-    height: 60px;      
-    }
   }
 
   &__list--hidden {
@@ -91,7 +93,7 @@
     transition: .25s linear;
     padding: 0;
     width: 100px;
-    z-index: 9999;
+    z-index: 9998;
   }
 
   &__frame:hover {
@@ -107,10 +109,9 @@
   }
 
   &__icon--hidden {
-    height: auto;
+    height: 30px;
     max-width: 30px;
     color: white;
-
   }
 
   &__name {

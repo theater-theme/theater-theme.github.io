@@ -1,8 +1,11 @@
 .portfolio {
-
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $web-up) {
+    height: inherit;
+  }
 
   &__card,
   &__image {
@@ -31,20 +34,6 @@
     }
   }
 
-  &__card::after {
-    @media screen and (max-width: $web-up){
-      content: '';
-      width: 50px;
-      height: 50px;
-      border-top: 50px solid transparent;
-      border-left: 30px solid #581B1B;
-      border-bottom: 50px solid transparent;
-      position: relative;
-      left: 105%;
-
-    }
-  }
-
   &__title,
   &__text {
     color: white;
@@ -55,12 +44,17 @@
 
     @media screen and (max-width: $mobile-up) {
       margin: 0;
+      font-size: 24px;
     }
   }
 
   &__text {
     font-size: 18px;
     line-height: 24px;
+
+    @media screen and (max-width: $web-up) {
+      font-size: 16px;
+    }
 
     @media screen and (max-width: $tablet-up) {
       width: 85%;
@@ -69,7 +63,7 @@
 
     @media screen and (max-width: $mobile-up) {
      width: 95%;
-     font-size: 13px;
+     font-size: 12px;
      line-height: 18px;
     }
   }

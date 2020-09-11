@@ -1,19 +1,7 @@
 .container
   #header.header
-    .header__nav
-      .header__logo
-        img.header__image(src="../assets/logo.png")
-      ul.header__list
-        li.header__items
-          a.header__links(href="#") Home
-        li.header__items
-          a.header__links(href="#feature") Features
-        li.header__items
-          a.header__links(href="#portfolio") Portfolio
-        li.header__items
-          a.header__links(href="#team") Team
-        li.header__items
-          a.header__links(href="#contact") Contact
+    .header__menu.menu
+    != partial("menu/_menu")
     .header__title
       h1.header__title--big Welcome to Theater
       h4.header__title--small A fancy responsive theme
@@ -41,15 +29,5 @@
         input.contact__message(type="text", name="email")
         span.contact__label Message
     button.contact__button Send
-    
-    //- social media buttons
-  .footer
-    a.footer__button(href="https://github.com/", target="_blank")
-      svg.footer__icon
-        use(xlink:href="/assets/defs.svg#icon-github")
-    a.footer__button(href="https://wordpress.org/download/", target="_blank")
-      svg.footer__icon
-        use(xlink:href="/assets/defs.svg#icon-wordpress")
-    a.footer__button(href="https://www.reddit.com/", target="_blank") 
-      svg.footer__icon
-        use(xlink:href="/assets/defs.svg#icon-reddit")
+
+  != partial("footer/_footer")
