@@ -5,9 +5,9 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-image: url('../assets/darkstage.png');
+  background-image: url('../assets/courtain.png');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-size: cover;
 
   @media screen and (max-width: $web-up) {
     padding: 25px;
@@ -17,13 +17,14 @@
     color: white;
     font-weight: bolder;
     margin: 0 0 50px;
+    font-family: Oswald;
   }
 
   &__wrap {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 25%;
+    height: 35%;
     width: 70%;
     padding: 20px;
     margin-bottom: 50px;
@@ -42,14 +43,11 @@
     justify-content: space-between;
     height: 100%;
     width: 40%;
-    
-    @media screen and (max-width: $web-up) {
-      height: 20%;
-      width: 65%;
-    }
 
-    @media screen and (max-width: $tablet-up) {
-      width: 75%;
+    @media screen and (max-width: $web-up) {
+      width: 80%;
+      justify-content: unset;
+      height: unset;
     }
 
     @media screen and (max-width: $mobile-up) {
@@ -57,14 +55,24 @@
     }
   }
 
+  &__divider {
+    @media screen and (max-width: $web-up) {
+      margin-bottom: 15px;
+    }
+  }
+
   &__placeholder {
     width: 100%;
     height: 50px;
 
-    @media screen and (max-width: $web-up) {
-      height: 30px;
-      margin-bottom: 15px;
+    @media screen and (max-width: $mobile-up) {
+      height: 35px;
     }
+  }
+  
+  &__placeholder,
+  &__message {
+    margin-bottom: 10px;
   }
 
   &__text {
@@ -74,12 +82,7 @@
     width: 35%;
 
     @media screen and (max-width: $web-up) {
-      width: 65%;
-      margin-top: 15px;
-    }
-
-    @media screen and (max-width: $tablet-up) {
-      width: 75%;
+      width: 80%
     }
 
     @media screen and (max-width: $mobile-up) {
@@ -91,21 +94,27 @@
     height: 100%;
   }
 
+  &__label {
+    color: white;
+  }
+
   &__button {
-    width: 350px;
+    width: 250px;
     height: 50px;
-    background-color: #e0c381;
+    background-color: #E0C381;
     border-radius: 5px;
     margin-bottom: 50px;
     margin-top: 15px;
+    border: 0 2px 3px solid #AF9559;
+    cursor: pointer;
 
     @media screen and (max-width: $web-up) {
-      width: 40%;
-      height: 35px;
+      margin-bottom: unset;
     }
 
     @media screen and (max-width: $mobile-up) {
       width: 50%;
+      
     }
   }
 }

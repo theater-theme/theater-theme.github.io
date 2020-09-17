@@ -1,0 +1,14 @@
+{
+  "button-1": {
+    "link": "https://github.com/",
+    "icon": "github"
+  },
+  "button-2": {
+    "link": "https://github.com/",
+    "icon": "wordpress"
+  },
+  "button-3": {
+    "link": "https://www.reddit.com/",
+    "icon": "reddit"
+  }
+}

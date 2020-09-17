@@ -1,8 +1,11 @@
 .portfolio {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $web-up) {
+    height: inherit;
+  }
 
   &__card,
   &__image {
@@ -20,6 +23,7 @@
     flex-direction: column;
     background-color: #581b1b;
     padding: 25px;
+    height: auto;
 
     @media screen and (max-width: $tablet-up) {
       padding: 20px;
@@ -36,26 +40,30 @@
   }
 
   &__title {
+    font-family: Oswald;
 
     @media screen and (max-width: $mobile-up) {
       margin: 0;
+      font-size: 24px;
     }
   }
 
   &__text {
-    width: 70%;
-    font-size: 14px;  
+    font-size: 18px;
     line-height: 24px;
+
+    @media screen and (max-width: $web-up) {
+      font-size: 16px;
+    }
 
     @media screen and (max-width: $tablet-up) {
       width: 85%;
-
       line-height: 20px;
      }
 
     @media screen and (max-width: $mobile-up) {
      width: 95%;
-     font-size: 13px;
+     font-size: 12px;
      line-height: 18px;
     }
   }
