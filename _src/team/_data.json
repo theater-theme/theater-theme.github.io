@@ -11,12 +11,12 @@
   },
   "johnny": {
     "image": "3",
-    "name": "Johnny Green",
+    "name": "Julian Stuart",
     "role": "Developer"
   },
   "karen": {
     "image": "4",
-    "name": "Karen Davis",
+    "name": "Thomas Adams",
     "role": "Project Manager"
   },
   "leslie": {
@@ -31,12 +31,12 @@
   },
   "thomas": {
     "image": "7",
-    "name": "Thomas Adams",
+    "name": "Karen Davis",
     "role": "Project Manager"
   },
   "julian": {
     "image": "8",
-    "name": "Julian Stuart",
+    "name": "Johnny Green",
     "role": "Designer"
   }
 }
