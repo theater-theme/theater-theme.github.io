@@ -2,10 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
-  @media screen and (max-width: $web-up) {
-    height: inherit;
-  }
+  overflow: hidden;
 
   &__card,
   &__image {
@@ -72,5 +69,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: max-content;
+
+    @media screen and (max-width: $tablet-up) {
+      height: unset;
+    }
   }
 }
