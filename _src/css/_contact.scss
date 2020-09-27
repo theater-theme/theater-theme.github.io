@@ -11,6 +11,7 @@
 
   @media screen and (max-width: $web-up) {
     padding: 25px;
+    height: unset;
   }
   
   &__title {
@@ -92,6 +93,10 @@
 
   &__message {
     height: 100%;
+
+    @media screen and (max-width: $web-up) {
+      height: 150px;
+    }
   }
 
   &__label {
@@ -107,6 +112,7 @@
     margin-top: 15px;
     border: 0 2px 3px solid #AF9559;
     cursor: pointer;
+    border: none;
 
     @media screen and (max-width: $web-up) {
       margin-bottom: unset;
