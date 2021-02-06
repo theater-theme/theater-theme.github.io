@@ -56,12 +56,12 @@
     @media screen and (max-width: $tablet-up) {
       width: 85%;
       line-height: 20px;
-     }
+    }
 
     @media screen and (max-width: $mobile-up) {
-     width: 95%;
-     font-size: 12px;
-     line-height: 18px;
+      font-size: 12px;
+      line-height: 18px;
+      width: 95%;
     }
   }
 
