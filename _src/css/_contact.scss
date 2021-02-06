@@ -15,7 +15,7 @@
   }
   
   &__title {
-    color: white;
+    color: $white;
     font-weight: bolder;
     margin: 0 0 50px;
     font-family: Oswald;
@@ -100,7 +100,7 @@
   }
 
   &__label {
-    color: white;
+    color: $white;
   }
 
   &__button {

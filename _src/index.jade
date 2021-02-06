@@ -1,17 +1,17 @@
 .container
-  #header.header
+  header#header.header
     .header__menu
-    != partial("menu/_menu")
-    .header__title
-      h1.header__title--big Welcome to Theater
-      h4.header__title--small A fancy responsive theme
+      != partial("menu/_menu")
+    .header__headline
+      h1.header__title.header__title--big Welcome to Theater
+      h4.header__title.header__title--small A fancy responsive theme
 
   #feature.feature
     != partial("feature/_feature")
   
   #portfolio.portfolio
     != partial("portfolio/_portfolio")
- 
+
   #team.team
     != partial("team/_team")
 

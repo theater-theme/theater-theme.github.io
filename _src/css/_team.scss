@@ -15,7 +15,7 @@
   }
 
   &__title {
-    color: #4a0000;
+    color: $wine;
     font-weight: bolder;
     font-family: Oswald;
     font-size: 36px;
@@ -88,7 +88,7 @@
     align-self: center;
     justify-content: space-around;
     position: absolute;
-    color: white;
+    color: $white;
     opacity: 0;
     transition: .25s linear;
     padding: 0;
@@ -97,7 +97,7 @@
   }
 
   &__frame:hover {
-    background-color: #4A0000;
+    background-color: $wine;
   }
 
   &__frame:hover  .team__image {
@@ -111,11 +111,11 @@
   &__icon--hidden {
     height: 30px;
     max-width: 30px;
-    color: white;
+    color: $white;
   }
 
   &__name {
-    color: #4A0000;
+    color: $wine;
     font-weight: bolder;
     margin-bottom: 10px;
 
@@ -125,7 +125,7 @@
   }
 
   &__role {
-    color: #4A0000;
+    color: $wine;
     font-size: 14px;
 
     @media screen and (max-width: $tablet-up) {

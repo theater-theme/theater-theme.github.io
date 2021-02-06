@@ -9,7 +9,7 @@
   &__header {
     font-size: 36px;
     font-weight: bolder;
-    color: #4a0000;
+    color: $wine;
     font-family: Oswald;
 
     @media screen and (min-width: $hd-up) {
@@ -89,7 +89,7 @@
 
   &__title,
   &__text{
-    color: #4a0000;
+    color: $wine;
   }
 
   &__text{

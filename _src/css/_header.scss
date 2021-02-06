@@ -1,25 +1,22 @@
 .header {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
   background-image: url('../assets/cover.png');
   background-repeat: no-repeat;
-  
   background-size: cover;
   
-  p { 
-    color: white;
-    font-weight: bolder;
-    // Temporary 
-  }
-
-  &__title {
+  &,  
+  &__headline {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
     height: 100%;
+  }
+  
+  &__headline {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__title {
+    color: $white;
     line-height: 5px;
   }
 
