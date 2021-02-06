@@ -7,13 +7,7 @@
     use(xlink:href="assets/defs.svg#icon-logo")
   .menu__box
     ul.menu__list
+    each menu, slug in public.menu._data 
       li.menu__items
-        a.menu__links(href="#") Home
-      li.menu__items
-        a.menu__links(href="#feature") Features
-      li.menu__items
-        a.menu__links(href="#portfolio") Portfolio
-      li.menu__items
-        a.menu__links(href="#team") Team
-      li.menu__items
-        a.menu__links(href="#contact") Contact
+        a.menu__links(href="#{ menu.path }") #{ menu.label }
+      

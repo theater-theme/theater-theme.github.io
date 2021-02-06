@@ -1,0 +1,12 @@
+h1.contact__title Get in Touch
+form.contact__form(id="contact_form" novalidate="novalidate" action="/" accept-charset="UTF-8" method="post")
+  fieldset.contact__field
+    input.contact__input(type="text", name="formName", id="formName")
+    label(for="formName").contact__label Name
+  fieldset.contact__field
+    input.contact__input(type="text", name="formEmail", id="formEmail")
+    label(for="formEmail").contact__label Email
+  fieldset.contact__field
+    textarea.contact__input(name="formMessage", id="formMessage", cols="30", rows="10")
+    label(for="formMessage").contact__label Message
+  button.contact__button Send

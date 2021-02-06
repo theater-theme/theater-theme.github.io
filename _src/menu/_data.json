@@ -1,3 +1,22 @@
 {
-  
+  "link-1": {
+    "label": "Home",
+    "path": "#"
+  },
+  "link-2": {
+    "label": "Features",
+    "path": "#features"
+  },
+  "link-3": {
+    "label": "Portfolio",
+    "path": "#portfolio"
+  },
+  "link-4": {
+    "label": "Team",
+    "path": "#team"
+  },
+  "link-5": {
+    "label": "Contact",
+    "path": "#contact"
+  }
 }

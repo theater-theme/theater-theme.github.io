@@ -6,7 +6,7 @@
       h1.header__title.header__title--big Welcome to Theater
       h4.header__title.header__title--small A fancy responsive theme
 
-  #feature.feature
+  #features.feature
     != partial("feature/_feature")
   
   #portfolio.portfolio
@@ -16,18 +16,6 @@
     != partial("team/_team")
 
   #contact.contact
-    h1.contact__title Get in Touch
-    .contact__wrap  
-      .contact__tag
-        .contact__divider
-          input.contact__placeholder(type="text", name="name")
-          span.contact__label Name
-        .contact__divider
-          input.contact__placeholder(type="text", name="email")
-          span.contact__label Email
-      .contact__text
-        input.contact__message(type="text", name="email")
-        span.contact__label Message
-    button.contact__button Send
+    != partial("contact/_contact")
 
   != partial("footer/_footer")
